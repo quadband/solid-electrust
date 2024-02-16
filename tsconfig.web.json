@@ -1,0 +1,19 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
+  "include": [
+    "app/src/renderer/src/env.d.ts",
+    "app/src/renderer/src/**/*",
+    "app/src/renderer/src/**/*.tsx",
+    "app/src/preload/*.d.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "jsxImportSource": "solid-js",
+    "baseUrl": ".",
+    "paths": {
+      "@renderer/*": [
+        "app/src/renderer/src/*"
+      ]
+    }
+  }
+}

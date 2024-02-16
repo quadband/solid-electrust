@@ -1,0 +1,36 @@
+{
+  "name": "solid-electrust",
+  "version": "1.0.0",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "build": "napi build --cargo-cwd ./native --js false --dts native/index.d.ts --platform --release",
+    "build:debug": "napi build --cargo-cwd ./native --js false --dts native/index.d.ts --platform && mv index.darwin-x64.node ./native",
+    "build:vite": "tsc && electron-vite build",
+    "preview": "electron-vite preview",
+    "dev": "npm run build:debug && electron-vite dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-toolkit/eslint-config-prettier": "^2.0.0",
+    "@electron-toolkit/eslint-config-ts": "^1.0.1",
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@napi-rs/cli": "^2.18.0",
+    "@types/node": "^20.11.16",
+    "electron": "^28.2.2",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-solid": "^0.13.1",
+    "prettier": "^3.2.4",
+    "solid-js": "^1.8.12",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "vite-plugin-solid": "^2.9.1"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.0",
+    "@electron-toolkit/utils": "^3.0.0",
+    "solid-js": "^1.8.14"
+  }
+}
