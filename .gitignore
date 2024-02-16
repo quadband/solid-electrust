@@ -198,3 +198,4 @@ Cargo.lock
 
 # This particular app. Need to change ALL of this.
 out/
+native/target/

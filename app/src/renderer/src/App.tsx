@@ -7,7 +7,7 @@ const App: Component = () => {
   return (
     <>
       <div>
-        <h1>Hello</h1>
+        <h1>Hello Rust, Solid, and Electron</h1>
         <button onClick={_ => ipcHandle()}>IPC Ping</button>
         <br />
         <button onClick={_ => hello()}>Hello from Rust</button>
