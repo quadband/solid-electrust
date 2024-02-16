@@ -197,4 +197,4 @@ Cargo.lock
 *.node
 
 # This particular app. Need to change ALL of this.
-out
+out/
