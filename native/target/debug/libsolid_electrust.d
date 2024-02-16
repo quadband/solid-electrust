@@ -1,1 +1,0 @@
-/Users/david/Documents/Projects/solid-electrust/native/target/debug/libsolid_electrust.dylib: /Users/david/Documents/Projects/solid-electrust/native/build.rs /Users/david/Documents/Projects/solid-electrust/native/src/lib.rs
